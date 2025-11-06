@@ -131,7 +131,7 @@ function injectButton() {
             const emailContent = getEmailContent();
 
             // Make a POST request to your backend API
-            const response = await fetch('http://localhost:8080/api/email/generate', {
+            const response = await fetch('https://email-writer-backend-mic6.onrender.com/api/email/generate', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
